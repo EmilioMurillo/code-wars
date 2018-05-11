@@ -20,14 +20,12 @@ Kata.getMiddle("A") should return "A"
 
 function getMiddle(s)
 {
-  //Code goes here!
-}
-
-Test.describe("GetMiddle", function() {
-  Test.it("Tests", function() {
-    Test.assertEquals(getMiddle("test"),"es");
-    Test.assertEquals(getMiddle("testing"),"t");
-    Test.assertEquals(getMiddle("middle"),"dd");
-    Test.assertEquals(getMiddle("A"),"A");
+  var middleLetters = '';
+    if(string.length % 2 === 0){
+      var even =string.length /2;
+      return string.slice(even -1, even + 1);
+}if (string.length % 2 !== 0){
+    var odd = string.charAt((string.length/2))
+    return odd;
   });
 });
